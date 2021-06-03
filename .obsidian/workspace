@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Rude Goldberg/Sensors/Bend sensor.md",
+            "file": "Shopping list.md",
             "mode": "source"
           }
         }
@@ -68,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Rude Goldberg/Sensors/Bend sensor.md",
+                "file": "Shopping list.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -83,20 +83,19 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "active": "22f3aec14aa10cca",
   "lastOpenFiles": [
-    "Rude Goldberg/Sensors/Bend sensor.md",
     "Shopping list.md",
+    "Rude Goldberg/Sensors/Bend sensor.md",
+    "Rude Goldberg/Materials.md",
+    "Untitled.md",
+    "Rude Goldberg/Sensors.md",
+    "Surface microphone.md",
+    "Rude Goldberg/Sensors/Button.md",
     "Rude Goldberg/Sensors/Tilt sensor.md",
     "Rude Goldberg/Sensors/Magnetic sensor.md",
-    "Rude Goldberg/Sensors/Button.md",
-    "Rude Goldberg/Sensors/Light sensor.md",
-    "Untitled.md",
-    "Rude Goldberg/Actuators_List.md",
-    "Rude Goldberg/Actuators/Actuators_List.md",
-    "Rude Goldberg/Materials.md"
+    "Rude Goldberg/Sensors/Light sensor.md"
   ]
 }

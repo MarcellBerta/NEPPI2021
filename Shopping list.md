@@ -6,6 +6,7 @@
 |[[Bend sensor]]|||||
 |[[Tilt sensor]]|||||
 |[[Magnetic sensor]]|||||
-|Opto-coupling|||||
-|Surface microphone|||||	
-|Proximity sensor|||||
+|[[Opto-coupling]]|||||
+|[[Surface microphone]]|||||	
+|[[Proximity sensor]]|||||
+
