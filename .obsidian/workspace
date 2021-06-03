@@ -4,12 +4,12 @@
     "type": "split",
     "children": [
       {
-        "id": "22f3aec14aa10cca",
+        "id": "aac7aa2b16376a4c",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Shopping list.md",
+            "file": "README.md",
             "mode": "source"
           }
         }
@@ -68,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Shopping list.md",
+                "file": "README.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -83,19 +83,20 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
-  "active": "22f3aec14aa10cca",
+  "active": "aac7aa2b16376a4c",
   "lastOpenFiles": [
+    "README.md",
+    "Untitled.md",
     "Shopping list.md",
     "Rude Goldberg/Sensors/Bend sensor.md",
     "Rude Goldberg/Materials.md",
-    "Untitled.md",
     "Rude Goldberg/Sensors.md",
     "Surface microphone.md",
     "Rude Goldberg/Sensors/Button.md",
     "Rude Goldberg/Sensors/Tilt sensor.md",
-    "Rude Goldberg/Sensors/Magnetic sensor.md",
-    "Rude Goldberg/Sensors/Light sensor.md"
+    "Rude Goldberg/Sensors/Magnetic sensor.md"
   ]
 }
