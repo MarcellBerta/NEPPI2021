@@ -8,9 +8,10 @@
 |[[Stepper motor]]|||||
 |[[Beeper]]|||||
 |Building materials|-------------------|-----------|-----------|--------|
+|[[Balls]]|[Kärkkäinen](https://www.karkkainen.com/verkkokauppa/marmorikuulat-100-1?id=101448427&gclid=Cj0KCQjwh_eFBhDZARIsALHjIKdAQNaz01Xkyj56hYwdwwa-m3BT-Yr1aDRfh0pL6w9b7O5872oTudAaAsdCEALw_wcB)||||
 |[[LEGO]]|||||
 |[[Magnets]]|||||
-|[[PVC]]|||||
+|[[PVC]]|[Muovia](https://muovia.com/product/akryyliputki-30-26-pituus-2000-mm/)||10m|Pending|
 |[[Wood]]|||||
 |Electronic parts|-------------------|-----------|-----------|--------|
 |[[Breadboards]]|||||
