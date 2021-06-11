@@ -4,13 +4,13 @@
     "type": "split",
     "children": [
       {
-        "id": "22f3aec14aa10cca",
+        "id": "9b5a7df00006e2b3",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Shopping list.md",
-            "mode": "source"
+            "file": "Rube Goldberg/Sensors/Light sensor.md",
+            "mode": "preview"
           }
         }
       }
@@ -68,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Shopping list.md",
+                "file": "Rube Goldberg/Sensors/Light sensor.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -86,17 +86,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "22f3aec14aa10cca",
+  "active": "9b5a7df00006e2b3",
   "lastOpenFiles": [
-    "Shopping list.md",
-    "README.md",
-    "Rude Goldberg/Sensors/Light sensor.md",
-    "Rude Goldberg/Materials.md",
-    "Rude Goldberg/Sensors.md",
-    "Rude Goldberg/Sensors/Tilt sensor.md",
-    "Rude Goldberg/Sensors/Magnetic sensor.md",
-    "Rude Goldberg/Sensors/Bend sensor.md",
-    "Rude Goldberg/Sensors/Button.md",
-    "Untitled.md"
+    "Rube Goldberg/Sensors/Light sensor.md",
+    "Rube Goldberg/Sensors/Button.md",
+    "Rube Goldberg/Sensors/Bend sensor.md",
+    "Rube Goldberg/Sensors/Magnetic sensor.md",
+    "Rube Goldberg/Sensors/Opto-coupling.md",
+    "Rube Goldberg/Sensors/Proximity sensor.md",
+    "Rube Goldberg/Sensors/Tilt sensor.md",
+    "Rube Goldberg/Sensors/Switch.md",
+    "Rube Goldberg/Sensors/Surface microphone.md",
+    "07.06.2021..md"
   ]
 }
