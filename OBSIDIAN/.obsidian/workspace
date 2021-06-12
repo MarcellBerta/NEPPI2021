@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Rube Goldberg/Building materials/Balls.md",
+            "file": "Rube Goldberg/Electronics parts/Transistors.md",
             "mode": "source"
           }
         }
@@ -68,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Rube Goldberg/Building materials/Balls.md",
+                "file": "Rube Goldberg/Electronics parts/Transistors.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -83,20 +83,19 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "active": "aac7aa2b16376a4c",
   "lastOpenFiles": [
-    "Rube Goldberg/Building materials/Balls.md",
+    "Rube Goldberg/Electronics parts/Transistors.md",
+    "Rube Goldberg/Electronics parts/Resistors.md",
+    "Rube Goldberg/Electronics parts/Breadboards.md",
+    "Rube Goldberg/Sensors/Bend sensor.md",
     "Shopping list.md",
+    "Rube Goldberg/Actuators/Beeper.md",
+    "Rube Goldberg/Building materials/Balls.md",
     "Rube Goldberg/Building materials/PVC.md",
     "07.06.2021..md",
-    "Untitled.md",
-    "Rube Goldberg/Sensors/Proximity sensor.md",
-    "Rube Goldberg/Sensors/Surface microphone.md",
-    "Rube Goldberg/Sensors/Button.md",
-    "Rube Goldberg/Electronics parts/Breadboards.md",
-    "Weeks/Week 1.md"
+    "Untitled.md"
   ]
 }
