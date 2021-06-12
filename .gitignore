@@ -1,4 +1,4 @@
 .DS_Store
 secrets.h
 certificate.crt
-
+CORRECT_cert.txt
