@@ -1,0 +1,101 @@
+{
+  "main": {
+    "id": "4babdc4192e55ba6",
+    "type": "split",
+    "children": [
+      {
+        "id": "6af2828804cebca7",
+        "type": "leaf",
+        "state": {
+          "type": "image",
+          "state": {
+            "file": "Pictures/Basic-LED.png"
+          }
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "c0f4f8775d7ead7c",
+    "type": "split",
+    "children": [
+      {
+        "id": "30b338c0e7adaad2",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "4650395114fd0001",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "be272c4b363ad887",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "57684328670aa7b0",
+    "type": "split",
+    "children": [
+      {
+        "id": "32a044860a768873",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "327df07bc02e8b50",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Pictures/Basic-LED.png",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "active": "6af2828804cebca7",
+  "lastOpenFiles": [
+    "Pictures/Basic-LED.png",
+    "Pictures/28YBJ-ULN2003-Arduino-1.jpg",
+    "Ultrasonics Distance Sensor.md",
+    "Syllabus.md",
+    "Shopping list.md",
+    "07.06.2021..md",
+    "Weeks/Week 3.md",
+    "Weeks/Week 2.md",
+    "Weeks/Week 1.md",
+    "Rube Goldberg/Actuators/Beeper.md"
+  ]
+}
