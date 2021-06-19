@@ -39,12 +39,15 @@
 
         var draw = SVG().addTo('body').size(1200, 1200);
 
-        var hexCount = 40;
+        var hexCount = 10;
         var hexMaxColumnCount = 6;
         var hexContainer = [];
 
         var curHexCol = 0;
-        var curHexRow = 0;
+        var curHexRow = 0;   // The hexagons are added on this way: even row, odd row, even roww, odd row
+
+        var hexHeight = 86.6;
+        var hexWidth = 100;
 
         for (var n=0; n<hexCount; n++) {
             var newHex = draw.polygon('0,43.3 25,0 75,0 100,43.3 75,86.6 25,86.6');
@@ -53,70 +56,33 @@
             newHex.on('mouseout', mouseOutHex);
 
             // Update position counters
-            console.log(`curHexCol: ${curHexCol} curHexRow: ${curHexRow}`);
+            console.log(`carFillRound: ${curHexRow} curHexCol: ${curHexCol} `);
 
             // Give position to the Hexagon
             var topPosition = 0;
             var leftPosition = 0;
 
-
-            // Even row, up to MaxColumnCount columns
-            if ( (curHexRow % 2) == 0 ) {
-
-                topPosition = curHexRow*(43.3 + (gap/2))+margin - gap;
-                leftPosition = curHexCol*(100+gap+50)+margin; 
+            if ((curHexCol % 2) == 0 ) { // if column is even, the upper row
+                topPosition = margin + curHexRow*(hexHeight+gap);
+                leftPosition = margin + curHexCol*(0.75*hexWidth+gap);
                 newHex.move(leftPosition, topPosition);
-
-                if ( curHexCol < hexMaxColumnCount-1 ) {
-                    curHexCol++;
-                } else {
-                    curHexCol = 0;
-                    curHexRow++;
-                }
-            } else { // odd row, one less columns
-
-                topPosition = curHexRow*(43.3 + (gap/2))+margin - gap;
-                leftPosition = 75 + gap + curHexCol*(100+gap +50) + margin - (gap/2); 
+            } else { // odd col
+                topPosition = margin + (hexHeight/2) + (gap/2) + (curHexRow)*(hexHeight+gap);
+                leftPosition = margin + curHexCol*(0.75*hexWidth+gap);
                 newHex.move(leftPosition, topPosition);
+            }
 
-                if ( curHexCol < hexMaxColumnCount-2 ) {
-                        curHexCol++;
-                } else {
-                    curHexCol = 0;
-                    curHexRow++;
-                }
+            if ( curHexCol < hexMaxColumnCount-1 ) {
+                curHexCol++;
+            } else {
+                curHexRow++;
+                curHexCol = 0;
             }
 
             hexContainer = [...hexContainer, newHex];
         }
 
         console.log(hexContainer.length);
-
-/*
-        var polygon_01 = draw.polygon('0,43.3 25,0 75,0 100,43.3 75,86.6 25,86.6');
-        polygon_01.on('mouseover', mouseOverHex);
-        polygon_01.on('click', clickOverHex);
-        polygon_01.on('mouseout', mouseOutHex);
-
-        var polygon_02 = draw.polygon('0,43.3 25,0 75,0 100,43.3 75,86.6 25,86.6');
-        polygon_02.move(75+gap, 43.3+gap);
-        polygon_02.on('mouseover', mouseOverHex);
-        polygon_02.on('click', clickOverHex);
-        polygon_02.on('mouseout', mouseOutHex);
-
-        var polygon_03 = draw.polygon('0,43.3 25,0 75,0 100,43.3 75,86.6 25,86.6');
-        polygon_03.move(2*(75+gap), 0);
-        polygon_03.on('mouseover', mouseOverHex);
-        polygon_03.on('click', clickOverHex);
-        polygon_03.on('mouseout', mouseOutHex);
-
-        var polygon_04 = draw.polygon('0,43.3 25,0 75,0 100,43.3 75,86.6 25,86.6');
-        polygon_04.move(3*(75+gap), 43.3+gap);
-        polygon_04.on('mouseover', mouseOverHex);
-        polygon_04.on('click', clickOverHex);
-        polygon_04.on('mouseout', mouseOutHex);
-*/
-
     </script>
     
 
