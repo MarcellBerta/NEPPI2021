@@ -4,12 +4,13 @@
     "type": "split",
     "children": [
       {
-        "id": "6af2828804cebca7",
+        "id": "f3d672293ac9a2a7",
         "type": "leaf",
         "state": {
-          "type": "image",
+          "type": "markdown",
           "state": {
-            "file": "Pictures/Basic-LED.png"
+            "file": "Hexagon/Motors/Servo motor.md",
+            "mode": "preview"
           }
         }
       }
@@ -67,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Pictures/Basic-LED.png",
+                "file": "Hexagon/Motors/Servo motor.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -85,17 +86,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "6af2828804cebca7",
+  "active": "f3d672293ac9a2a7",
   "lastOpenFiles": [
-    "Pictures/Basic-LED.png",
-    "Pictures/28YBJ-ULN2003-Arduino-1.jpg",
-    "Ultrasonics Distance Sensor.md",
-    "Syllabus.md",
-    "Shopping list.md",
-    "07.06.2021..md",
-    "Weeks/Week 3.md",
-    "Weeks/Week 2.md",
-    "Weeks/Week 1.md",
-    "Rube Goldberg/Actuators/Beeper.md"
+    "Hexagon/Motors/Servo motor.md",
+    "Hexagon/Motors/Stepper motor.md",
+    "Hexagon/Microcontrollers/Motor controller.md",
+    "Hexagon/Microcontrollers/ESP32 v4.md",
+    "Hexagon/Electronics parts/Wires.md",
+    "Hexagon/Electronics parts/Transistors.md",
+    "Hexagon/Electronics parts/Resistors.md",
+    "Hexagon/Electronics parts/Breadboards.md",
+    "Hexagon/Arduino files/NEPPI_Info header.md",
+    "Hexagon/Arduino files/NEPPI library.md"
   ]
 }
