@@ -1,6 +1,6 @@
 #DroneBot #Components101
 
-![[ESP32-Pinout.jpg]]
+![[ESP32-Pinout.jpeg]]
 
 
 

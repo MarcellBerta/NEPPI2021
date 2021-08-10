@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Hexagon/Motors/Servo motor.md",
+            "file": "Hexagon/Electronics parts/Transistors.md",
             "mode": "preview"
           }
         }
@@ -68,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Hexagon/Motors/Servo motor.md",
+                "file": "Hexagon/Electronics parts/Transistors.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -88,15 +88,15 @@
   },
   "active": "f3d672293ac9a2a7",
   "lastOpenFiles": [
-    "Hexagon/Motors/Servo motor.md",
-    "Hexagon/Motors/Stepper motor.md",
-    "Hexagon/Microcontrollers/Motor controller.md",
-    "Hexagon/Microcontrollers/ESP32 v4.md",
-    "Hexagon/Electronics parts/Wires.md",
     "Hexagon/Electronics parts/Transistors.md",
+    "Hexagon/Microcontrollers/Stepper driver controller.md",
     "Hexagon/Electronics parts/Resistors.md",
+    "Getting started/Syllabus.md",
+    "Getting started/!!!README!!!.md",
     "Hexagon/Electronics parts/Breadboards.md",
-    "Hexagon/Arduino files/NEPPI_Info header.md",
-    "Hexagon/Arduino files/NEPPI library.md"
+    "Hexagon/Microcontrollers/ESP32 v4.md",
+    "Hexagon/Microcontrollers/Motor controller.md",
+    "Hexagon/Motors/Stepper motor.md",
+    "Hexagon/Motors/Servo motor.md"
   ]
 }

@@ -97,12 +97,15 @@ void setup() {
   
 
   
-  // put your setup code here, to run once:
+  // Section 6 : put your setup code here, to run once
   
 }
 
 void loop() {
   client.poll(); //The ESP32 pings the websocket to maintain conneciton
-  // put your main code here, to run repeatedly:
+  // Section 7 : put your main code here, to run repeatedly:
 
 }
+
+
+  //Section 8 : you may write any functions that you would like to use inside the setup or loop functions
