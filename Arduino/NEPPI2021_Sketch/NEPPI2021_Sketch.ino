@@ -28,6 +28,8 @@
  
 #include <NEPPI_Info.h> //This is the header file, containing the information for the wifi and webserver
 #include <NEPPI.h> //This library is created for this course, it contains all the necessary libraries and the step and servo functions
+#include <ESP32Servo.h>
+
 using namespace websockets;
 
   // Section 2:
@@ -38,6 +40,7 @@ const char* password = NEPPI_PASS; //This is the password of the WiFi
 const char* websockets_connection_string = NEPPI_SOCKET; //This is the URL of the Websocket
 const char echo_org_ssl_ca_cert[] PROGMEM = NEPPI_CERTIFICATE; //This is the https certificate for the Websocket
 NEPPI neppi;
+ESP32AnalogRead adc;
 WebsocketsClient client;
 
   // Section 3:
@@ -61,18 +64,20 @@ void onEventsCallback(WebsocketsEvent event, String data) {
 
 
   // Section 4
-int stepsPerRevolution; // This is the steps the stepper needs to make a full revolution
-int stepperIn1; //The pin to which In1 on the driver is connected
-int stepperIn2; //The pin to which In2 on the driver is connected
-int stepperIn3; //The pin to which In3 on the driver is connected
-int stepperIn4; //The pin to which In4 on the driver is connected
+int stepsPerRevolution = 200; // This is the steps the stepper needs to make a full revolution
+int stepperIn1 = 4; //The pin to which In1 on the driver is connected
+int stepperIn2 = 16; //The pin to which In2 on the driver is connected
+int stepperIn3 = 17; //The pin to which In3 on the driver is connected
+int stepperIn4 = 5; //The pin to which In4 on the driver is connected
 Stepper myStepper(stepsPerRevolution, stepperIn1, stepperIn2, stepperIn3, stepperIn4); //This creates he myStepper object
 
 Servo myServo1;
 Servo myServo2;
-
 void setup() {
   // Section 5
+adc.attach(35);
+
+
   Serial.begin(115200); // The ESP32 will start communcation with the Serial monitor on Baud 115200
   // The timers allocated here will be used for controlling the Servos
   ESP32PWM::allocateTimer(0);
@@ -102,9 +107,15 @@ void setup() {
 }
 
 void loop() {
+
+
+  if (adc.readVoltage() > 1)
+  {
+    neppi.step(myStepper,10,10,0);
+  }
+  delay(50);
   client.poll(); //The ESP32 pings the websocket to maintain conneciton
   // Section 7 : put your main code here, to run repeatedly:
-
 }
 
 
