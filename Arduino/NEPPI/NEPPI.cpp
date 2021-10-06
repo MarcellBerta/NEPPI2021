@@ -17,6 +17,8 @@ void NEPPI :: step(Stepper _stepper, int nrsteps, int speed, int delnum)
     delay(delnum);
 }
 
+// Servo func does not work because of "timer things".
+/*
 void NEPPI :: servo(Servo _servo, int posinit, int posend, int delnum)
 {
     int pos;
@@ -40,4 +42,4 @@ void NEPPI :: servo(Servo _servo, int posinit, int posend, int delnum)
     }
     
 }
-
+*/
