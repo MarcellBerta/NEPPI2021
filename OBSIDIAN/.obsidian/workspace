@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Hexagon/Motors/Servo motor.md",
+            "file": "Hexagon/Sensors/Conductive ball.md",
             "mode": "preview"
           }
         }
@@ -68,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Hexagon/Motors/Servo motor.md",
+                "file": "Hexagon/Sensors/Conductive ball.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -88,15 +88,15 @@
   },
   "active": "f3d672293ac9a2a7",
   "lastOpenFiles": [
-    "Hexagon/Motors/Servo motor.md",
+    "Hexagon/Sensors/Conductive ball.md",
+    "Hexagon/Motors/Stepper motor.md",
+    "Hexagon/Sensors/Proximity sensor.md",
+    "Hexagon/Sensors/Switch.md",
+    "Hexagon/Sensors/Tilt sensor.md",
+    "Hexagon/Sensors/Bend sensor.md",
     "Hexagon/Microcontrollers/ESP32 v4.md",
-    "Hexagon/Electronics parts/Resistors.md",
-    "Hexagon/Electronics parts/Transistors.md",
-    "Hexagon/Microcontrollers/Stepper driver controller.md",
-    "Getting started/Syllabus.md",
-    "Getting started/!!!README!!!.md",
-    "Hexagon/Electronics parts/Breadboards.md",
-    "Hexagon/Microcontrollers/Motor controller.md",
-    "Hexagon/Motors/Stepper motor.md"
+    "Hexagon/Microcontrollers/Stepper driver controller L298N.md",
+    "Hexagon/Motors/Servo motor.md",
+    "Hexagon/Sensors/Button.md"
   ]
 }

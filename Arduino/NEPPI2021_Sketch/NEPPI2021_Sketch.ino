@@ -1,3 +1,6 @@
+#include <NEPPI_Info.h>
+#include <NEPPI.h>
+
 /*
  This is the starting sketch for Aalto's NEPPI 2021 course. You will find a lot of
  code that you need not to worry about. However all lines will be explained, so if 
@@ -40,7 +43,8 @@ const char* password = NEPPI_PASS; //This is the password of the WiFi
 const char* websockets_connection_string = NEPPI_SOCKET; //This is the URL of the Websocket
 const char echo_org_ssl_ca_cert[] PROGMEM = NEPPI_CERTIFICATE; //This is the https certificate for the Websocket
 NEPPI neppi;
-ESP32AnalogRead adc;
+
+
 WebsocketsClient client;
 
   // Section 3:
@@ -53,30 +57,57 @@ void onMessageCallback(WebsocketsMessage message) {
 void onEventsCallback(WebsocketsEvent event, String data) {
     if(event == WebsocketsEvent::ConnectionOpened) {
         Serial.println("Connnection Opened");
+        
     } else if(event == WebsocketsEvent::ConnectionClosed) {
-        Serial.println("Connnection Closed");
+        Serial.println("Connnection Closed, Trying again");
+        client.connect(websockets_connection_string);
+        delay(1000);
+        
     } else if(event == WebsocketsEvent::GotPing) {
         Serial.println("Got a Ping!");
+        
     } else if(event == WebsocketsEvent::GotPong) {
         Serial.println("Got a Pong!");
+       
     }
 }
 
 
-  // Section 4
-int stepsPerRevolution = 200; // This is the steps the stepper needs to make a full revolution
-int stepperIn1 = 4; //The pin to which In1 on the driver is connected
-int stepperIn2 = 16; //The pin to which In2 on the driver is connected
-int stepperIn3 = 17; //The pin to which In3 on the driver is connected
-int stepperIn4 = 5; //The pin to which In4 on the driver is connected
-Stepper myStepper(stepsPerRevolution, stepperIn1, stepperIn2, stepperIn3, stepperIn4); //This creates he myStepper object
+// Section 4
 
+//Stepper
+int stepsPerRevolution; // This is the steps the stepper needs to make a full revolution
+int stepperIn1; //The pin to which In1 on the driver is connected
+int stepperIn2; //The pin to which In2 on the driver is connected
+int stepperIn3; //The pin to which In3 on the driver is connected
+int stepperIn4; //The pin to which In4 on the driver is connected
+Stepper myStepper(stepsPerRevolution, stepperIn1, stepperIn2, stepperIn3, stepperIn4); //This creates he myStepper object
+//Sensors
+int sensorPin1; //The pin to which the first sensor is connected
+int sensorPin2; //The pin to which the first sensor is connected
+int sensorPin3; //The pin to which the first sensor is connected
+//These are the voltage readers that will be attachedto the sensors pins respective to their numbers
+ESP32AnalogRead adc1;
+ESP32AnalogRead adc2;
+ESP32AnalogRead adc3;
+//Servos
+int servoPin1; //The pin to which the first servo is connected
+int servoPin2; //The pin to which the second servo is connected
 Servo myServo1;
 Servo myServo2;
+int voltage1;
+int voltage2;
+int voltage3;
+int sensemessage = 0;
+int establishConnection = 0;
+
 void setup() {
   // Section 5
-adc.attach(35);
 
+  adc1.attach(35);
+  adc2.attach(34);
+  adc3.attach(32);
+  myServo1.attach(25);
 
   Serial.begin(115200); // The ESP32 will start communcation with the Serial monitor on Baud 115200
   // The timers allocated here will be used for controlling the Servos
@@ -93,26 +124,27 @@ adc.attach(35);
   // The ESP32 will start listening for messages and events, using the functions defined above
   client.onMessage(onMessageCallback);
   client.onEvent(onEventsCallback);
-  //The ESP32 connects to the websocket and sends the certificate
-  client.setCACert(echo_org_ssl_ca_cert);
-  client.connect(websockets_connection_string);
-  // The ESP32 sends the booting message, letting the websocket know its MAC address for identification
-  String bootmsg = "booting," + WiFi.macAddress();
-  client.send(bootmsg);
+
+    //The ESP32 connects to the websocket and sends the certificate
+    client.setCACert(echo_org_ssl_ca_cert);
+    client.connect(websockets_connection_string);
   
+  
+  // The ESP32 sends the booting message, letting the websocket know its MAC address for identification
+  String bootmsg = "booting," + WiFi.macAddress() + ",56";
+  client.send(bootmsg);
+  client.send("gates,2406");
+  // Section 6 : put your setup code here, to run once
 
   
-  // Section 6 : put your setup code here, to run once
+  
   
 }
 
+
 void loop() {
-
-
-  if (adc.readVoltage() > 1)
-  {
-    neppi.step(myStepper,10,10,0);
-  }
+ 
+  neppi.step(myStepper,10,10,10);
   delay(50);
   client.poll(); //The ESP32 pings the websocket to maintain conneciton
   // Section 7 : put your main code here, to run repeatedly:
