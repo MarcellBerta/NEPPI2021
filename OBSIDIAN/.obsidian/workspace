@@ -9,8 +9,8 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Hexagon/Motors/Servo motor.md",
-            "mode": "preview"
+            "file": "Shopping list.md",
+            "mode": "source"
           }
         }
       }
@@ -68,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Hexagon/Motors/Servo motor.md",
+                "file": "Shopping list.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -88,15 +88,15 @@
   },
   "active": "f3d672293ac9a2a7",
   "lastOpenFiles": [
-    "Hexagon/Motors/Servo motor.md",
-    "Hexagon/Microcontrollers/ESP32 v4.md",
-    "Hexagon/Electronics parts/Resistors.md",
-    "Hexagon/Electronics parts/Transistors.md",
-    "Hexagon/Microcontrollers/Stepper driver controller.md",
-    "Getting started/Syllabus.md",
-    "Getting started/!!!README!!!.md",
-    "Hexagon/Electronics parts/Breadboards.md",
-    "Hexagon/Microcontrollers/Motor controller.md",
-    "Hexagon/Motors/Stepper motor.md"
+    "Shopping list.md",
+    "07.06.2021..md",
+    "Weeks/Week 3.md",
+    "Weeks/Week 2.md",
+    "Weeks/Week 1.md",
+    "Pictures/L298N.png",
+    "Pictures/frizing_sensor_flex_lunegate.png",
+    "Pictures/Example-of-How-to-Use-a-Micro-switch.png",
+    "Pictures/ESP32-Pinout.jpeg",
+    "Pictures/Bipolar-Stepper-L298N.jpg"
   ]
 }
