@@ -35,6 +35,7 @@ using namespace websockets;
   // Section 2:
 
 //These values are from the WiFiPass header file
+
 const char* ssid = "aalto open"; //This is the name of the WiFi
 const char* password = ""; //This is the password of the WiFi
 const char* websockets_connection_string = NEPPI_SOCKET; //This is the URL of the Websocket
