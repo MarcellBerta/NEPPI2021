@@ -1,1 +1,0 @@
-![[RESISTOR CODES.jpg]]
