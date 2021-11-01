@@ -20,7 +20,7 @@ Next up, we will be installing 5 public and 1 custom library and we are ready to
 <img width="799" alt="Screenshot 2021-11-01 at 14 05 23" src="https://user-images.githubusercontent.com/64134220/139673431-12eb2792-42bf-4810-b1a8-3780222bc7c4.png">
 
 Each library has some example sketches that you can check out under File->Examples. \
-Finally we have our own library "NEPPI". You can install it by downloading the contents of this github and copying the NEPPI folder found in he Library folder to your own library folder in your Arduino folder on your computer. You can read more about how to install custom libraries here: *insert link* \
+Finally we have our own library "NEPPI". You can install it by downloading the contents of this github and copying the NEPPI folder found in he Library folder to your own library folder in your Arduino folder on your computer. You can read more about how to install custom libraries here: https://www.arduino.cc/en/hacking/libraries \
 Since the NEPPI library includes all libraries we only need to include the NEPPI library in our code to access all of them. You can find out more about the NEPPI library in the documentations section. \
 ## Section 3: Documentations
 ### Section 3.1: Documentation for the parts
