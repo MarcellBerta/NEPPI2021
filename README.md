@@ -9,6 +9,11 @@ Other: A steel ball.
 ## Section 2: Installing Arduino IDE and the necessary libraries
 The first thing that needs to be installed is the Arduino Dekstop IDE. Which will compile and upload your code to the microncontroller (in our case an ESP32. You can find the installation guide in the following link \
 Arduino IDE installation guide: https://www.arduino.cc/en/Guide (Scroll down to the Install the Arduino Desktop IDE section) \
-Next, we will have to install 
+Next, we will have to install the ESP32 library so that we can upload scripts to the ESP32s.https://randomnerdtutorials.com/installing-the-esp32-board-in-arduino-ide-windows-instructions/ \
+Next up, we will be installing 5 public and 1 custom library and we are ready to go. The public libraries are as follows: WiFi (by Arduino), Stepper (by Arduino), ESP32AnalogRead (by Kevin Harrington), ESP32Servo (by Kevin Harrington) and ArduinoWebsockets (by Gil Maimon). You can install all of these libraries through the IDE itself, by using the "Manage libraries" tab as shown below: \
+Place holder for images \
+Each library has some example sketches that you can check out under File->Examples. \
+Finally we have our own library "NEPPI". You can install it by downloading the contents of this github and copying the NEPPI folder found in he Library folder to your own library folder in your Arduino folder on your computer. You can read more about how to install custom libraries here: *insert link* \
+Since the NEPPI library includes all libraries we only need to include the NEPPI library in our code to access all of them. You can find out more about the NEPPI library in the documentations section. \
 ## Section 3: Documentations
 https://media.digikey.com/pdf/Data%20Sheets/DFRobot%20PDFs/SER0043_Web.pdf
