@@ -36,8 +36,8 @@ using namespace websockets;
 
 //These values are from the WiFiPass header file
 
-const char* ssid = "aalto open"; //This is the name of the WiFi
-const char* password = ""; //This is the password of the WiFi
+const char* ssid = "DSDnternet"; //This is the name of the WiFi
+const char* password = "MEGArareDSDxperience42069"; //This is the password of the WiFi
 const char* websockets_connection_string = NEPPI_SOCKET; //This is the URL of the Websocket
 const char echo_org_ssl_ca_cert[] PROGMEM = NEPPI_CERTIFICATE; //This is the https certificate for the Websocket
 NEPPI neppi;
@@ -77,7 +77,8 @@ Servo myServo1;
 Servo myServo2;
 void setup() {
   // Section 5
-adc.attach(35);
+myServo1.attach(23,1000,2000);
+myServo1.setPeriodHertz(60);
 
 
   Serial.begin(115200); // The ESP32 will start communcation with the Serial monitor on Baud 115200
@@ -108,9 +109,18 @@ adc.attach(35);
   // Section 6 : put your setup code here, to run once
   
 }
+int pos;
 void loop() {
 
-  
+for (pos = 0; pos <= 180; pos += 1) { // goes from 0 degrees to 180 degrees
+    // in steps of 1 degree
+    myServo1.write(pos);    // tell servo to go to position in variable 'pos'
+    delay(15);             // waits 15ms for the servo to reach the position
+  }
+  for (pos = 180; pos >= 0; pos -= 1) { // goes from 180 degrees to 0 degrees
+    myServo1.write(pos);    // tell servo to go to position in variable 'pos'
+    delay(15);             // waits 15ms for the servo to reach the position
+  }
 
 
 
