@@ -27,8 +27,8 @@ To download the files from this repository, you can click on "Code" and then sel
 
 ## Section 3: Documentations
 ### Section 3.1: Documentation for the parts
-Stepper:
-Stepper controller:
+Stepper: https://cdn-shop.adafruit.com/product-files/324/C140-A+datasheet.jpg \
+Stepper controller:https://components101.com/modules/l293n-motor-driver-module \
 Servo:https://media.digikey.com/pdf/Data%20Sheets/DFRobot%20PDFs/SER0043_Web.pdf \
 Resistors:
 ESP32:
