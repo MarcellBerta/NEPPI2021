@@ -6,6 +6,11 @@ Welcome to the GitHub site for the NEPPI course! Here you can find all the neces
 Hexagon components: A base, a middle part and a top, 6 pillars, 2-4 walls and accessories for those walls.\
 Electronic components: Ten wires of each type, 1MOhm resistors, a stepper motor, a stepper controller, an ESP32, a micro-USB to USB able, two servos, a breadboard, a battery and a clip.\
 Other: A steel ball.
+## Section 2: How to connect things to the ESP32
+The stepper motor has to be connected to the driver and then the driver to the ESP32 in order to control the stepper, below you can find a diagram about how to connect them. 
+![stepper-pinout](https://user-images.githubusercontent.com/64134220/140338471-95aee5b9-9336-4760-bb5b-2abb48b64e6a.jpg)
+The servos are much easier to connect, the brown pin should be connected to the ground, the red to the 5V output of the ESP32 and the orange to one of the numbered pins (2,4,12-19,21-23,25-27,32-33). Since you'll be using the ground and voltage outputs of the ESP32s for multiple purposes, it's recommended to use the breadboard to connect them, here is how breadboards connect:
+![Breadboard-Pinout](https://user-images.githubusercontent.com/64134220/140338504-a11aa6df-af90-45de-a48b-4b7be1f571be.png)
 ## Section 2: Installing Arduino IDE and the necessary libraries
 The first thing that needs to be installed is the Arduino Dekstop IDE. Which will compile and upload your code to the microncontroller (in our case an ESP32. You can find the installation guide in the following link \
 Arduino IDE installation guide: https://www.arduino.cc/en/Guide (Scroll down to the Install the Arduino Desktop IDE section) \
@@ -24,12 +29,11 @@ Finally we have our own library "NEPPI". You can install it by downloading the c
 Since the NEPPI library includes all libraries we only need to include the NEPPI library in our code to access all of them. You can find out more about the NEPPI library in the documentations section. \
 To download the files from this repository, you can click on "Code" and then select download az ZIP as seen below: \
 <img width="931" alt="Screenshot 2021-11-02 at 16 38 45" src="https://user-images.githubusercontent.com/64134220/139869182-4d58c097-fa5c-4fb0-b1e0-0e8bd50b5da9.png">
-
 ## Section 3: Useful links
 Stepper: https://cdn-shop.adafruit.com/product-files/324/C140-A+datasheet.jpg \
 Stepper controller:https://components101.com/modules/l293n-motor-driver-module \
 Servo:https://media.digikey.com/pdf/Data%20Sheets/DFRobot%20PDFs/SER0043_Web.pdf \
 ESP32: 
-## Section 4: NEPPI
+## Section 4: NEPPI library
 Right now the NEPPI library includes all downloaded libraries. Initially, it was meant to store functions, however the original functions of the libraries proved to be simple enough that a common library of functions started to complicate things. In the end only the Step function remains which takes 4 parameters, a Stepper object and 3 ints which are the number of steps, the speed and the delay after the steps are taken. The function is called by creating a NEPPI object which takes no parameters, after NEPPI neppi has been created, neppi.Step(Stepper stepper, int nrofsteps, int speed, int delay) can be called. The Neppi_info file is more important because it contains the certificate and url for the websocket, and the ssid and password for the wifi. You can checkout the NEPPI_sketch to see how the connection to the websocket script works.
 
