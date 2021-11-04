@@ -25,11 +25,11 @@ Since the NEPPI library includes all libraries we only need to include the NEPPI
 To download the files from this repository, you can click on "Code" and then select download az ZIP as seen below: \
 <img width="931" alt="Screenshot 2021-11-02 at 16 38 45" src="https://user-images.githubusercontent.com/64134220/139869182-4d58c097-fa5c-4fb0-b1e0-0e8bd50b5da9.png">
 
-## Section 3: Documentations
-### Section 3.1: Documentation for the parts
+## Section 3: Useful links
 Stepper: https://cdn-shop.adafruit.com/product-files/324/C140-A+datasheet.jpg \
 Stepper controller:https://components101.com/modules/l293n-motor-driver-module \
 Servo:https://media.digikey.com/pdf/Data%20Sheets/DFRobot%20PDFs/SER0043_Web.pdf \
-Resistors:
-ESP32:
+ESP32: 
+## Section 4: NEPPI
+Right now the NEPPI library includes all downloaded libraries. Initially, it was meant to store functions, however the original functions of the libraries proved to be simple enough that a common library of functions started to complicate things. However, the Neppi_info file is more important because it contains the certificate for the websocket. You can checkout the NEPPI_sketch to see how the connection to the websocket script works.
 
