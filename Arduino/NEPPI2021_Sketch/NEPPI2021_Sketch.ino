@@ -36,8 +36,8 @@ using namespace websockets;
 
 //These values are from the WiFiPass header file
 
-const char* ssid = "DSDnternet"; //This is the name of the WiFi
-const char* password = "MEGArareDSDxperience42069"; //This is the password of the WiFi
+const char* ssid = NEPPI_SSID; //This is the name of the WiFi
+const char* password = NEPPI_PASS; //This is the password of the WiFi
 const char* websockets_connection_string = NEPPI_SOCKET; //This is the URL of the Websocket
 const char echo_org_ssl_ca_cert[] PROGMEM = NEPPI_CERTIFICATE; //This is the https certificate for the Websocket
 NEPPI neppi;
