@@ -31,5 +31,5 @@ Stepper controller:https://components101.com/modules/l293n-motor-driver-module \
 Servo:https://media.digikey.com/pdf/Data%20Sheets/DFRobot%20PDFs/SER0043_Web.pdf \
 ESP32: 
 ## Section 4: NEPPI
-Right now the NEPPI library includes all downloaded libraries. Initially, it was meant to store functions, however the original functions of the libraries proved to be simple enough that a common library of functions started to complicate things. However, the Neppi_info file is more important because it contains the certificate for the websocket. You can checkout the NEPPI_sketch to see how the connection to the websocket script works.
+Right now the NEPPI library includes all downloaded libraries. Initially, it was meant to store functions, however the original functions of the libraries proved to be simple enough that a common library of functions started to complicate things. However, the Neppi_info file is more important because it contains the certificate and url for the websocket, and the ssid and password for the wifi. You can checkout the NEPPI_sketch to see how the connection to the websocket script works.
 
