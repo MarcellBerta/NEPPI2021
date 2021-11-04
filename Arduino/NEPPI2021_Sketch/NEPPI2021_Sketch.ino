@@ -43,7 +43,7 @@ const char echo_org_ssl_ca_cert[] PROGMEM = NEPPI_CERTIFICATE; //This is the htt
 NEPPI neppi;
 ESP32AnalogRead adc;
 WebsocketsClient client;
-int ID = 2;
+int ID = 0; //Put your team ID here
   // Section 3:
 //These two functions are used to react to incoming messages and events
 void onMessageCallback(WebsocketsMessage message) {
@@ -67,17 +67,17 @@ void onEventsCallback(WebsocketsEvent event, String data) {
 
   // Section 4
 int stepsPerRevolution = 200; // This is the steps the stepper needs to make a full revolution
-int stepperIn1 = 4; //The pin to which In1 on the driver is connected
-int stepperIn2 = 16; //The pin to which In2 on the driver is connected
-int stepperIn3 = 17; //The pin to which In3 on the driver is connected
-int stepperIn4 = 5; //The pin to which In4 on the driver is connected
+int stepperIn1 = 0; //The pin to which In1 on the driver is connected
+int stepperIn2 = 0; //The pin to which In2 on the driver is connected
+int stepperIn3 = 0; //The pin to which In3 on the driver is connected
+int stepperIn4 = 0; //The pin to which In4 on the driver is connected
 Stepper myStepper(stepsPerRevolution, stepperIn1, stepperIn2, stepperIn3, stepperIn4); //This creates he myStepper object
 
 Servo myServo1;
 Servo myServo2;
 void setup() {
   // Section 5
-myServo1.attach(23,1000,2000);
+myServo1.attach(0,1000,2000); //Attach the servo to the pin connected to the orange 
 myServo1.setPeriodHertz(60);
 
 
@@ -103,7 +103,6 @@ myServo1.setPeriodHertz(60);
   String bootmsg = "booting," + WiFi.macAddress() + ","+ID;
   client.send(bootmsg);
 
-  client.send("gates,1235");
   
   
   // Section 6 : put your setup code here, to run once
@@ -111,18 +110,6 @@ myServo1.setPeriodHertz(60);
 }
 int pos;
 void loop() {
-
-for (pos = 0; pos <= 180; pos += 1) { // goes from 0 degrees to 180 degrees
-    // in steps of 1 degree
-    myServo1.write(pos);    // tell servo to go to position in variable 'pos'
-    delay(15);             // waits 15ms for the servo to reach the position
-  }
-  for (pos = 180; pos >= 0; pos -= 1) { // goes from 180 degrees to 0 degrees
-    myServo1.write(pos);    // tell servo to go to position in variable 'pos'
-    delay(15);             // waits 15ms for the servo to reach the position
-  }
-
-
 
   client.poll(); //The ESP32 pings the websocket to maintain conneciton
   // Section 7 : put your main code here, to run repeatedly:
